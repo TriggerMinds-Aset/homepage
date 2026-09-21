@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 <title>TRIGGER MIND — Think. Create. Impact.</title>
-<meta name="description" content="TRIGGER MIND is a student community of dreamers, doers, and difference makers — running coding contests, quizzes, and creative events. Learn, connect, grow, and make impact.">
+<meta name="description" content="TRIGGER MIND is a student community running coding contests, quizzes, and creative events. Learn, connect, grow, and make impact.">
 
 <link rel="icon" type="image/png" href="logonobg.PNG">
 <link rel="apple-touch-icon" href="logonobg.PNG">
@@ -333,7 +333,7 @@
     margin: 6px 0 22px;
   }
   .hero-sub .px{ color: var(--pink); }
-  .hero-sub .x{ color: var(--white); padding: 0 6px; }
+  .hero-sub .x{ color: var(--white); }
   .hero-sub .cx{
     color: var(--cyan);
     text-shadow: 0 0 18px rgba(34,242,255,0.55), 0 0 40px rgba(34,242,255,0.25);
@@ -835,10 +835,18 @@
   .carousel{
     position:relative; overflow:hidden; border-radius:16px;
     border:1px solid var(--panel-line); background:#08080a;
+    max-width: 520px; margin: 0 auto;
   }
   .carousel-track{ display:flex; transition: transform .5s cubic-bezier(.2,.8,.2,1); }
   .carousel-slide{ min-width:100%; flex-shrink:0; }
-  .carousel-slide img{ width:100%; aspect-ratio: 4/3; object-fit:cover; display:block; background:#111; }
+  .carousel-slide img{
+    width:100%; aspect-ratio: 4/3; max-height: 300px;
+    object-fit:contain; object-position:center; display:block; background:#0c0c10;
+  }
+  @media (max-width: 640px){
+    .carousel{ max-width:100%; }
+    .carousel-slide img{ aspect-ratio: 1/1; max-height: 260px; }
+  }
   .carousel-slide .cap{
     padding: 13px 18px; font-family: var(--font-mono); font-size:12px; color: var(--dim);
     background: var(--panel); border-top:1px solid var(--panel-line);
@@ -955,18 +963,18 @@
     <div class="hero-grid" aria-hidden="true"></div>
     <img src="logonobg.PNG" alt="" aria-hidden="true" class="hero-watermark">
     <div class="wrap hero-inner">
-      <div class="kicker-row"><span class="dot" aria-hidden="true"></span> <span class="glitch-wrap glitch-plain" data-text="ONE CLUB. ENDLESS POSSIBILITIES.">ONE CLUB. ENDLESS POSSIBILITIES.</span></div>
+      <div class="kicker-row"><span class="dot" aria-hidden="true"></span> <span class="glitch-wrap glitch-plain" data-text="Amity School of Engineering and Technology presents">Amity School of Engineering and Technology presents</span></div>
       <h1 class="hero-title glitch-wrap" id="glitchTitle" data-text="TRIGGER MIND">TRIGGER MIND</h1>
-      <p class="hero-sub glitch-wrap" data-text="THINK. CREATE. IMPACT."><span class="px">THINK.</span><span class="x"> CREATE.</span><span class="cx"> IMPACT.</span></p>
+      <p class="hero-sub glitch-wrap" data-text="THINK.CREATE.IMPACT."><span class="px">THINK.</span><span class="x">CREATE.</span><span class="cx">IMPACT.</span></p>
       <p class="hero-tagline">
-        <span class="tl-a">IDEAS. PEOPLE.</span><span class="tl-b">IMPACT.</span>
+        <span class="tl-a">ONE CLUB. ENDLESS POSSIBILITIES.</span>
         <span class="tl-prompt-group">
-          <span class="tl-prompt">&gt; join_</span>
+          <span class="tl-prompt">&gt;_</span>
           <span class="tl-cursor" aria-hidden="true"></span>
         </span>
       </p>
 
-      <p class="hero-desc">A community of dreamers, doers, and difference makers. We run coding contests, quizzes, and creative events, and turn student ideas into things that actually happen.</p>
+      <p class="hero-desc">A community of difference makers. We run coding contests, quizzes, and creative events.</p>
 
       <div class="meta-chips">
         <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>STUDENT-RUN CLUB</span>
@@ -997,8 +1005,8 @@
   <section class="section-pad" id="about">
     <div class="wrap about-grid">
       <div class="reveal">
-        <p class="eyebrow">// WHO WE ARE</p>
-        <h2 class="section-title">Students. Ideas. Impact. That's Trigger Mind.</h2>
+       
+        <h2 class="section-title">WHO WE ARE?</h2>
         <p class="lede">We're a student community that turns ideas into events — coding contests, quizzes, and skill-building sessions that anyone can join, no matter where they're starting from.</p>
       </div>
       <div class="about-cards reveal">
@@ -1023,24 +1031,9 @@
     <div class="wrap">
       <p class="eyebrow reveal">// RECENT EVENT</p>
       <h2 class="section-title reveal">Pop Culture × Coding</h2>
-      <p class="lede reveal">Same references. Different syntax. Your group chat's favorite arguments, turned into a two-round competition.</p>
+      <p class="lede reveal">Your group chat's favorite arguments, turned into a two-round competition.</p>
 
       <div class="recap-grid">
-        <div class="recap-copy reveal">
-          <p>Trigger Mind's Pop Culture × Coding event brought together students for a two-round quiz experience — first testing pop culture reflexes, then flipping those same references into beginner-friendly logic and code challenges.</p>
-
-          <h3>Round One — Pop Culture Quiz</h3>
-          <p>Fast-paced and all about quick recall across films, music, memes, games, and series.</p>
-          <div class="round-tags"><span>Films</span><span>Music</span><span>Memes</span><span>Games</span><span>Series</span></div>
-
-          <h3>Round Two — Pop-Culture Coding</h3>
-          <p>Those same references, turned into beginner-friendly logic challenges and light code.</p>
-          <div class="round-tags"><span>Logic</span><span>Light Code</span><span>Themed Problems</span></div>
-
-          <h3>The takeaway</h3>
-          <p>Every participant walked away with a certificate, top scorers took home goodies, and the room stayed high-energy from a live scoreboard start to finish.</p>
-        </div>
-
         <div class="reveal">
           <div class="carousel" id="recapCarousel" aria-label="Photos from Pop Culture × Coding">
             <div class="carousel-track" id="carouselTrack">
@@ -1070,6 +1063,21 @@
             <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Choose photo"></div>
           </div>
         </div>
+
+        <div class="recap-copy reveal">
+          <p>Trigger Mind's Pop Culture × Coding event brought together students for a two-round quiz experience — first testing pop culture reflexes, then flipping those same references into beginner-friendly logic and code challenges.</p>
+
+          <h3>Round One — Pop Culture Quiz</h3>
+          <p>Fast-paced and all about quick recall across films, music, memes, games, and series.</p>
+          <div class="round-tags"><span>Films</span><span>Music</span><span>Memes</span><span>Games</span><span>Series</span></div>
+
+          <h3>Round Two — Pop-Culture Coding</h3>
+          <p>Those same references, turned into beginner-friendly logic challenges and light code.</p>
+          <div class="round-tags"><span>Logic</span><span>Light Code</span><span>Themed Problems</span></div>
+
+          <h3>The takeaway</h3>
+          <p>Every participant walked away with a certificate, top scorers took home goodies, and the room stayed high-energy from a live scoreboard start to finish.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -1079,7 +1087,7 @@
     <div class="wrap">
       <p class="eyebrow reveal">// TRACK RECORD</p>
       <h2 class="section-title reveal">A few things we've run before.</h2>
-      <p class="lede reveal">From domain-level coding contests to national-scale challenges.</p>
+      <p class="lede reveal">From domain-level coding contests to national-level events.</p>
 
       <div class="prevev-grid">
         <div class="prevev-card reveal">
@@ -1123,8 +1131,7 @@
         <div>
           <span class="role">PRESIDENT, TRIGGER MIND</span>
           <h3>Shagun Sharma</h3>
-          <p>Leading Trigger Mind's events, partnerships, and day-to-day direction — turning ideas from the team into things that actually ship.</p>
-        </div>
+         
       </div>
 
       <div class="team-group reveal" style="margin-bottom:26px;">
@@ -1134,7 +1141,7 @@
 
       <div class="team-group reveal">
         <img src="images/allteam1.jpeg" alt="The full Trigger Mind team" loading="lazy">
-        <p class="cap">The full team — dreamers, doers, and difference makers.</p>
+        <p class="cap">The full team </p>
       </div>
     </div>
   </section>
@@ -1142,8 +1149,8 @@
   <!-- WHY JOIN US -->
   <section class="section-pad" id="why-join">
     <div class="wrap">
-      <p class="eyebrow reveal">// WHY JOIN US</p>
-      <h2 class="section-title reveal">Your ideas can change everything.</h2>
+
+      <h2 class="section-title reveal">WHY JOIN US?</h2>
       <p class="lede reveal">A community of dreamers, doers, and difference makers. Here's what you get.</p>
 
       <div class="exp-grid">
@@ -1175,7 +1182,7 @@
   <section class="section-pad urgency">
     <div class="wrap">
       <span class="urgency-badge reveal">⚡ RECRUITMENT OPEN</span>
-      <h2 class="reveal">Be the spark. Fuel ideas, drive change, create impact.</h2>
+      <h2 class="reveal">Be the spark. Drive change, create impact.</h2>
       <p class="reveal">Students. Ideas. Impact. That's Trigger Mind — and we're looking for you.</p>
       <a href="https://forms.gle/4QL1n4TgTNZq1b5L9" target="_blank" rel="noopener noreferrer" class="btn-register reveal">
         JOIN THE MOVEMENT
@@ -1191,7 +1198,7 @@
         <div class="register-copy">
           <p class="eyebrow">// HOW TO JOIN</p>
           <h2>Apply to Trigger Mind.</h2>
-          <p>Fill out the recruitment form — it takes a couple of minutes. We'll reach out over WhatsApp, Instagram, or email with next steps.</p>
+          <p>Fill out the recruitment form — it takes a couple of minutes. We'll reach out to you as soon as you fill this form.</p>
           <a href="https://forms.gle/4QL1n4TgTNZq1b5L9" target="_blank" rel="noopener noreferrer" class="btn-register">
             OPEN RECRUITMENT FORM
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -1199,7 +1206,7 @@
         </div>
         <div class="register-qr">
           <div id="qr-code" role="img" aria-label="QR code linking to the Trigger Mind recruitment form"></div>
-          <span>SCAN TO APPLY</span>
+          <span>Either click thr upper button or SCAN TO APPLY</span>
         </div>
       </div>
     </div>
