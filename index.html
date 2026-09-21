@@ -427,6 +427,28 @@
   .btn-register:active{ transform: translateY(0); }
   .btn-register svg{ width:18px; height:18px; }
 
+  /* secondary hero CTA — club recruitment, sits under the event button */
+  .cta-row-secondary{ margin-top: 14px; }
+  .btn-register-alt{
+    color: var(--white) !important;
+    background: var(--panel) !important;
+    border: 1px solid var(--panel-line) !important;
+    font-size: 15px;
+    padding: 15px 26px;
+    box-shadow: none !important;
+    transition: transform .15s ease, border-color .15s ease, background-color .15s ease, box-shadow .15s ease;
+  }
+  .btn-register-alt .bra-bolt{ font-size: 15px; line-height: 1; }
+  .btn-register-alt:hover, .btn-register-alt:focus-visible{
+    transform: translateY(-2px);
+    border-color: var(--green) !important;
+    background: rgba(182,255,46,0.08) !important;
+    box-shadow: 0 10px 30px rgba(182,255,46,0.18) !important;
+  }
+  @media (max-width: 560px){
+    .cta-row .btn-register{ width: 100%; justify-content: center; }
+  }
+
   .btn-ghost{
     font-family: var(--font-mono); font-size: 13.5px; color: var(--dim);
     display:inline-flex; align-items:center; gap:8px;
@@ -1340,6 +1362,14 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
         <a href="#next-event" class="btn-ghost">Webinar details &darr;</a>
+      </div>
+
+      <div class="cta-row cta-row-secondary">
+        <a href="https://forms.gle/4QL1n4TgTNZq1b5L9" target="_blank" rel="noopener noreferrer" class="btn-register btn-register-alt">
+          <span class="bra-bolt" aria-hidden="true">&#9889;</span>
+          JOIN TRIGGER MIND
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
         <a href="#events" class="btn-ghost">See what we've done &darr;</a>
       </div>
     </div>
